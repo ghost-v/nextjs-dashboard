@@ -1,5 +1,16 @@
 import '@/app/ui/global.css'
 import { inter } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s',
+    default: 'Dashboard',
+  },
+  description: '',
+  metadataBase: new URL('https://nextjs-dashboard-ruby-six-18.vercel.app'),
+};
+
 export default function RootLayout({
   children,
 }: {
